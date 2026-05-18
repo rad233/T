@@ -410,20 +410,25 @@
 </div>
 
 <!-- Order Confirmation Modal -->
-<div id="order-confirmation-modal" class="fixed inset-0 z-[1000005] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-400">
+<div id="order-confirmation-modal"
+    class="fixed inset-0 z-[1000005] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-400">
     <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" onclick="closeOrderConfirmation()"></div>
-    <div class="relative w-full max-w-sm rounded-xl border border-gray-200 bg-white shadow-lg p-6 sm:p-8 transform scale-95 transition-transform duration-400" id="order-card-content">
+    <div class="relative w-full max-w-sm rounded-xl border border-gray-200 bg-white shadow-lg p-6 sm:p-8 transform scale-95 transition-transform duration-400"
+        id="order-card-content">
         <div class="flex flex-col items-center space-y-6 text-center">
             <!-- Success Icon -->
             <div id="order-success-icon" class="opacity-0 translate-y-4 transition-all duration-500 ease-out delay-100">
                 <i data-lucide="check-circle" class="h-12 w-12 text-green-500"></i>
             </div>
-            
+
             <!-- Title -->
-            <h2 id="order-success-title" class="text-2xl font-semibold text-black opacity-0 translate-y-4 transition-all duration-500 ease-out delay-150">Your order has been successfully submitted</h2>
-            
+            <h2 id="order-success-title"
+                class="text-2xl font-semibold text-black opacity-0 translate-y-4 transition-all duration-500 ease-out delay-150">
+                Your order has been successfully submitted</h2>
+
             <!-- Order Details Section -->
-            <div id="order-success-details" class="w-full space-y-4 pt-4 opacity-0 translate-y-4 transition-all duration-500 ease-out delay-200">
+            <div id="order-success-details"
+                class="w-full space-y-4 pt-4 opacity-0 translate-y-4 transition-all duration-500 ease-out delay-200">
                 <div class="flex items-center justify-between border-b border-gray-100 pb-4 text-sm text-gray-500">
                     <span>Order ID</span>
                     <span id="confirm-order-id" class="text-black font-medium">ORD-12345</span>
@@ -443,22 +448,39 @@
             </div>
 
             <!-- Contact Instructions & Social Links -->
-            <div id="order-success-btn" class="w-full pt-4 opacity-0 translate-y-4 transition-all duration-500 ease-out delay-300 flex flex-col items-center gap-4">
+            <div id="order-success-btn"
+                class="w-full pt-4 opacity-0 translate-y-4 transition-all duration-500 ease-out delay-300 flex flex-col items-center gap-4">
                 <p class="text-sm text-gray-500 text-center font-medium leading-relaxed">
-                    Please text us from here and make sure to include your <span class="font-bold text-black">order ID</span>.
+                    Please text us from here and make sure to include your <span class="font-bold text-black">order
+                        ID</span>.
                 </p>
                 <div class="flex gap-3 justify-center w-full">
                     <!-- Facebook -->
-                    <a href="#" target="_blank" class="hover:bg-gray-100 rounded-md border border-gray-200 p-2 transition-colors flex items-center justify-center text-gray-700 hover:text-black shadow-sm" aria-label="Facebook">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    <a href="https://www.facebook.com/share/1PFbB2C111/" target="_blank"
+                        class="hover:bg-gray-100 rounded-md border border-gray-200 p-2 transition-colors flex items-center justify-center text-gray-700 hover:text-black shadow-sm"
+                        aria-label="Facebook">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
                     </a>
                     <!-- Instagram -->
-                    <a href="#" target="_blank" class="hover:bg-gray-100 rounded-md border border-gray-200 p-2 transition-colors flex items-center justify-center text-gray-700 hover:text-black shadow-sm" aria-label="Instagram">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    <a href="https://www.instagram.com/gorpcoretbilisi__?igsh=MWx6NmtzejE2bDA4NQ==" target="_blank"
+                        class="hover:bg-gray-100 rounded-md border border-gray-200 p-2 transition-colors flex items-center justify-center text-gray-700 hover:text-black shadow-sm"
+                        aria-label="Instagram">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
                     </a>
                     <!-- TikTok -->
-                    <a href="#" target="_blank" class="hover:bg-gray-100 rounded-md border border-gray-200 p-2 transition-colors flex items-center justify-center text-gray-700 hover:text-black shadow-sm" aria-label="TikTok">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <a href="https://www.tiktok.com/@gorpcoretbilisi__?fbclid=PAZnRzaAR24Y5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaeueZZDTl1n4LZuiilSJ2LGuwcDuPinGcDl5xQEcMQGHWXd_kjleG1-_79-8A_aem_YWdncwCjq8FxprLhpxpkYKYIbCqe" target="_blank"
+                        class="hover:bg-gray-100 rounded-md border border-gray-200 p-2 transition-colors flex items-center justify-center text-gray-700 hover:text-black shadow-sm"
+                        aria-label="TikTok">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
                             <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
                         </svg>
                     </a>
@@ -487,35 +509,43 @@
 </script>
 
 <!-- Admin Command Center (Nuclear Reset Version) -->
-<div id="admin-dashboard" class="hidden fixed inset-0 z-[99999] bg-[#0e100f] text-white overflow-hidden flex"
+<div id="admin-dashboard"
+    class="hidden fixed inset-0 z-[99999] bg-[#0e100f] text-white overflow-hidden flex flex-col md:flex-row"
     style="opacity: 1 !important; visibility: visible !important;">
 
     <!-- Sidebar -->
-    <div class="w-64 border-r border-white/5 bg-black/20 backdrop-blur-xl p-8 flex flex-col gap-10">
+    <div
+        class="w-full md:w-64 border-b md:border-b-0 md:border-r border-white/5 bg-black/20 backdrop-blur-xl p-4 md:p-8 flex flex-col gap-4 md:gap-10 shrink-0">
         <div class="flex items-center gap-3">
-            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shrink-0">
                 <i data-lucide="shield-check" class="w-5 h-5 text-black"></i>
             </div>
             <h2 class="font-black tracking-tighter uppercase text-sm">Hype Admin</h2>
         </div>
-        <nav id="admin-nav" class="flex flex-col gap-2">
+        <nav id="admin-nav" class="flex flex-row md:flex-col gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
             <button data-tab="drops"
-                class="admin-tab-btn flex items-center gap-4 p-4 rounded-xl bg-white/10 text-white transition-all">
-                <i data-lucide="layout-dashboard" class="w-5 h-5"></i>
-                <span class="text-xs font-bold uppercase tracking-widest">Latest Drops</span>
+                class="admin-tab-btn shrink-0 flex items-center gap-2 md:gap-4 p-3 md:p-4 rounded-xl bg-white/10 text-white transition-all">
+                <i data-lucide="layout-dashboard" class="w-4 h-4 md:w-5 md:h-5"></i>
+                <span class="text-[10px] md:text-xs font-bold uppercase tracking-widest">Latest Drops</span>
             </button>
             <button data-tab="collection"
-                class="admin-tab-btn flex items-center gap-4 p-4 rounded-xl text-gray-500 hover:bg-white/5 hover:text-white transition-all">
-                <i data-lucide="layers" class="w-5 h-5"></i>
-                <span class="text-xs font-bold uppercase tracking-widest">Full Collection</span>
+                class="admin-tab-btn shrink-0 flex items-center gap-2 md:gap-4 p-3 md:p-4 rounded-xl text-gray-500 hover:bg-white/5 hover:text-white transition-all">
+                <i data-lucide="layers" class="w-4 h-4 md:w-5 md:h-5"></i>
+                <span class="text-[10px] md:text-xs font-bold uppercase tracking-widest">Full Collection</span>
             </button>
             <button data-tab="orders"
-                class="admin-tab-btn flex items-center gap-4 p-4 rounded-xl text-gray-500 hover:bg-white/5 hover:text-white transition-all">
-                <i data-lucide="shopping-bag" class="w-5 h-5"></i>
-                <span class="text-xs font-bold uppercase tracking-widest">Orders</span>
+                class="admin-tab-btn shrink-0 flex items-center gap-2 md:gap-4 p-3 md:p-4 rounded-xl text-gray-500 hover:bg-white/5 hover:text-white transition-all">
+                <i data-lucide="shopping-bag" class="w-4 h-4 md:w-5 md:h-5"></i>
+                <span class="text-[10px] md:text-xs font-bold uppercase tracking-widest">Orders</span>
+            </button>
+            <!-- Mobile Exit Button inside nav scroll -->
+            <button onclick="location.reload()"
+                class="shrink-0 flex md:hidden items-center gap-2 md:gap-4 p-3 md:p-4 rounded-xl text-red-400 hover:bg-red-500/10 transition-all">
+                <i data-lucide="log-out" class="w-4 h-4 md:w-5 md:h-5"></i>
+                <span class="text-[10px] md:text-xs font-bold uppercase tracking-widest">Exit Admin</span>
             </button>
         </nav>
-        <div class="mt-auto">
+        <div class="mt-auto hidden md:block">
             <button onclick="location.reload()"
                 class="flex items-center gap-4 p-4 rounded-xl text-red-400 hover:bg-red-500/10 transition-all w-full">
                 <i data-lucide="log-out" class="w-5 h-5"></i>
@@ -525,7 +555,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="flex-1 overflow-y-auto p-12">
+    <div class="flex-1 overflow-y-auto p-4 md:p-12">
         <!-- Tab: Latest Drops -->
         <div id="tab-drops" class="admin-tab-content space-y-12">
             <header class="flex justify-between items-center">
@@ -587,15 +617,26 @@
                         <h3 id="coll-form-title" class="text-lg font-bold mb-6 flex items-center gap-3"><i
                                 data-lucide="plus-circle" class="w-5 h-5 text-green-400"></i> Add to Catalog</h3>
                         <div class="space-y-4">
-                            <input id="new-coll-name" type="text" placeholder="Name"
+                            <input id="coll-prod-name" type="text" placeholder="Name"
                                 class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm text-white outline-none">
-                            <input id="new-coll-price" type="text" placeholder="Price (e.g. $120)"
-                                class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm text-white outline-none">
-                            <input id="new-coll-img" type="text" placeholder="Image URL (e.g. assets/9.jpg)"
-                                class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm text-white outline-none">
+                            <div class="grid grid-cols-1 gap-2">
+                                <input id="coll-prod-price" type="text" placeholder="Price (e.g. $120)"
+                                    class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm text-white outline-none">
+                                <input id="coll-prod-old-price" type="text" placeholder="Old Price (Discount)"
+                                    class="hidden w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm text-white outline-none">
+                            </div>
+                            <div class="space-y-4">
+                                <label
+                                    class="text-[10px] font-bold text-gray-500 uppercase tracking-widest ml-1">Product
+                                    Gallery (Infinite)</label>
+                                <div id="coll-prod-gallery-grid" class="grid grid-cols-4 gap-2">
+                                    <!-- Dynamic slots will be injected here -->
+                                </div>
+                            </div>
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="space-y-2">
-                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-widest">Type</label>
+                                    <label
+                                        class="text-xs font-bold text-gray-500 uppercase tracking-widest">Type</label>
                                     <select id="new-coll-cat"
                                         class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm text-white outline-none">
                                         <option value="T-Shirt">T-Shirt</option>
@@ -606,8 +647,9 @@
                                     </select>
                                 </div>
                                 <div class="space-y-2">
-                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-widest">Collection</label>
-                                    <select id="new-coll-col"
+                                    <label
+                                        class="text-xs font-bold text-gray-500 uppercase tracking-widest">Collection</label>
+                                    <select id="coll-prod-collection"
                                         class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm text-white outline-none">
                                         <option value="Essentials">Essentials</option>
                                         <option value="Archive">Archive</option>
@@ -616,7 +658,8 @@
                                 </div>
                             </div>
                             <div class="space-y-2">
-                                <label class="text-xs font-bold text-gray-500 uppercase tracking-widest">Sizes (CSV)</label>
+                                <label class="text-xs font-bold text-gray-500 uppercase tracking-widest">Sizes
+                                    (CSV)</label>
                                 <input id="new-coll-sizes" type="text" placeholder="S, M, L, XL" value="S, M, L, XL"
                                     class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm text-white outline-none">
                             </div>
@@ -664,33 +707,38 @@
 </div>
 
 <!-- Order Details Modal -->
-<div id="admin-order-modal" class="hidden fixed inset-0 z-[100000] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300">
+<div id="admin-order-modal"
+    class="hidden fixed inset-0 z-[100000] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 px-4 md:px-0">
     <div class="absolute inset-0 bg-black/80 backdrop-blur-md" onclick="closeOrderModal()"></div>
-    <div class="relative w-full max-w-4xl max-h-[85vh] bg-[#111] border border-white/10 shadow-2xl rounded-3xl flex flex-col transform scale-95 transition-all duration-300" id="admin-order-content">
+    <div class="relative w-full max-w-4xl max-h-[85vh] bg-[#111] border border-white/10 shadow-2xl rounded-3xl flex flex-col transform scale-95 transition-all duration-300"
+        id="admin-order-content">
         <!-- Header -->
-        <div class="p-8 border-b border-white/5 flex justify-between items-center bg-white/5">
+        <div class="p-4 md:p-8 border-b border-white/5 flex justify-between items-center bg-white/5">
             <div>
-                <p class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-1">Order Details</p>
-                <h2 id="modal-order-id" class="text-3xl font-black text-white uppercase tracking-tighter">ORD-XXXXXX</h2>
+                <p class="text-[10px] md:text-xs font-bold text-gray-500 tracking-widest uppercase mb-1">Order Details
+                </p>
+                <h2 id="modal-order-id" class="text-xl md:text-3xl font-black text-white uppercase tracking-tighter">
+                    ORD-XXXXXX</h2>
             </div>
-            <button onclick="closeOrderModal()" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
-                <i data-lucide="x" class="w-5 h-5 text-white"></i>
+            <button onclick="closeOrderModal()"
+                class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+                <i data-lucide="x" class="w-4 h-4 md:w-5 md:h-5 text-white"></i>
             </button>
         </div>
-        
+
         <!-- Content -->
-        <div class="flex-1 overflow-y-auto p-8 space-y-8 scrollbar-hide">
+        <div class="flex-1 overflow-y-auto p-4 md:p-8 space-y-6 md:space-y-8 scrollbar-hide">
             <div class="flex justify-between items-end pb-4 border-b border-white/5">
                 <div>
-                    <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Date</p>
-                    <p id="modal-order-date" class="text-sm text-gray-300 mt-1">Oct 24, 2023</p>
+                    <p class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest">Date</p>
+                    <p id="modal-order-date" class="text-xs md:text-sm text-gray-300 mt-1">Oct 24, 2023</p>
                 </div>
                 <div class="text-right">
-                    <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Total Paid</p>
-                    <p id="modal-order-total" class="text-2xl font-black text-green-400 mt-1">$0.00</p>
+                    <p class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest">Total Paid</p>
+                    <p id="modal-order-total" class="text-lg md:text-2xl font-black text-green-400 mt-1">$0.00</p>
                 </div>
             </div>
-            
+
             <div>
                 <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Products Purchased</h3>
                 <div id="modal-order-products" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1086,11 +1134,7 @@
     document.getElementById('toggle-to-signin')?.addEventListener('click', () => showStep('signin'));
     document.getElementById('toggle-to-signup')?.addEventListener('click', () => showStep('email'));
     document.getElementById('btn-admin-access').onclick = () => {
-        document.getElementById('admin-dashboard').classList.remove('hidden');
-        document.getElementById('admin-dashboard').style.display = 'flex';
-        document.getElementById('admin-dashboard').style.zIndex = '9999';
-        initAdminPanel();
-        lucide.createIcons();
+        showStep('admin');
     };
 
 
@@ -1272,7 +1316,7 @@
                     </div>
                 `).join('');
         }
-        
+
         loadAdminOrders();
         lucide.createIcons();
     }
@@ -1420,10 +1464,10 @@
     window.loadAdminOrders = (filterText = '') => {
         const ordersList = document.getElementById('admin-orders-list');
         if (!ordersList) return;
-        
+
         const storedOrders = JSON.parse(localStorage.getItem('hype_orders') || '[]');
         const filtered = storedOrders.filter(o => o.id.toLowerCase().includes(filterText.toLowerCase()));
-        
+
         if (filtered.length === 0) {
             ordersList.innerHTML = `<p class="text-gray-500 text-center py-8 font-medium">No orders found.</p>`;
             return;
@@ -1431,25 +1475,25 @@
 
         // Render from newest to oldest
         ordersList.innerHTML = filtered.slice().reverse().map(order => `
-            <div class="flex items-center justify-between p-6 bg-white/5 rounded-3xl border border-white/5 hover:bg-white/10 transition-colors">
-                <div class="flex items-center gap-6">
-                    <div class="w-14 h-14 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
-                        <i data-lucide="shopping-bag" class="w-6 h-6 text-blue-400"></i>
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between p-4 md:p-6 bg-white/5 rounded-3xl border border-white/5 hover:bg-white/10 transition-colors gap-4 md:gap-0">
+                <div class="flex items-center gap-4 md:gap-6 w-full md:w-auto">
+                    <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                        <i data-lucide="shopping-bag" class="w-5 h-5 md:w-6 md:h-6 text-blue-400"></i>
                     </div>
                     <div>
-                        <p class="font-black text-xl uppercase tracking-tight">${order.id}</p>
-                        <p class="text-xs text-gray-500 font-bold uppercase tracking-widest">${order.date} • ${order.items.length} Items</p>
+                        <p class="font-black text-lg md:text-xl uppercase tracking-tight">${order.id}</p>
+                        <p class="text-[10px] md:text-xs text-gray-500 font-bold uppercase tracking-widest">${order.date} • ${order.items.length} Items</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-8">
-                    <p class="text-2xl font-black text-green-400">${order.total}</p>
-                    <button onclick="inspectOrder('${order.id}')" class="px-8 py-4 rounded-full bg-white text-black font-black text-xs uppercase tracking-[0.2em] hover:bg-gray-200 transition-colors shadow-lg">
+                <div class="flex items-center justify-between w-full md:w-auto gap-4 md:gap-8">
+                    <p class="text-xl md:text-2xl font-black text-green-400">${order.total}</p>
+                    <button onclick="inspectOrder('${order.id}')" class="px-6 py-3 md:px-8 md:py-4 rounded-full bg-white text-black font-black text-[10px] md:text-xs uppercase tracking-[0.2em] hover:bg-gray-200 transition-colors shadow-lg">
                         Inspect
                     </button>
                 </div>
             </div>
         `).join('');
-        
+
         lucide.createIcons();
     };
 
@@ -1489,7 +1533,7 @@
         const modal = document.getElementById('admin-order-modal');
         const content = document.getElementById('admin-order-content');
         modal.classList.remove('hidden');
-        
+
         // Slight delay for transition
         setTimeout(() => {
             modal.style.opacity = '1';
@@ -1501,11 +1545,11 @@
     window.closeOrderModal = () => {
         const modal = document.getElementById('admin-order-modal');
         const content = document.getElementById('admin-order-content');
-        
+
         modal.style.opacity = '0';
         modal.style.pointerEvents = 'none';
         content.style.transform = 'scale(0.95)';
-        
+
         setTimeout(() => {
             modal.classList.add('hidden');
         }, 300);
@@ -2073,13 +2117,13 @@
     if (btnCheckout) {
         btnCheckout.addEventListener('click', () => {
             if (cart.length === 0) return;
-            
+
             // Populate Order Details
             const orderId = 'ORD-' + Math.floor(Math.random() * 1000000).toString().padStart(6, '0');
             const now = new Date();
             const dateStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
             const totalAmount = document.getElementById('cart-total').innerText;
-            
+
             // Save Order to LocalStorage
             const newOrder = {
                 id: orderId,
@@ -2090,30 +2134,30 @@
             const storedOrders = JSON.parse(localStorage.getItem('hype_orders') || '[]');
             storedOrders.push(newOrder);
             localStorage.setItem('hype_orders', JSON.stringify(storedOrders));
-            
+
             document.getElementById('confirm-order-id').innerText = orderId;
             document.getElementById('confirm-date').innerText = dateStr;
             document.getElementById('confirm-total').innerText = document.getElementById('cart-total').innerText;
-            
+
             // Show Modal
             const modal = document.getElementById('order-confirmation-modal');
             const content = document.getElementById('order-card-content');
-            
+
             modal.style.opacity = '1';
             modal.style.pointerEvents = 'auto';
             content.style.transform = 'scale(1)';
-            
+
             // Trigger staggered animations (similar to Framer Motion staggerChildren)
             setTimeout(() => {
                 ['icon', 'title', 'details', 'btn'].forEach(id => {
                     const el = document.getElementById('order-success-' + id);
-                    if(el) {
+                    if (el) {
                         el.style.opacity = '1';
                         el.style.transform = 'translateY(0)';
                     }
                 });
             }, 50);
-            
+
             // Confetti burst for successful order
             confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 }, colors: ['#000', '#22c55e', '#fff'] });
         });
@@ -2122,20 +2166,20 @@
     window.closeOrderConfirmation = () => {
         const modal = document.getElementById('order-confirmation-modal');
         const content = document.getElementById('order-card-content');
-        
+
         // Reset animations
         ['icon', 'title', 'details', 'btn'].forEach(id => {
             const el = document.getElementById('order-success-' + id);
-            if(el) {
+            if (el) {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(1rem)';
             }
         });
-        
+
         content.style.transform = 'scale(0.95)';
         modal.style.opacity = '0';
         modal.style.pointerEvents = 'none';
-        
+
         // Empty cart and close sidebar
         cart.length = 0;
         updateCartUI();
